@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,minximum-scale=1.0,user-scalable=0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/alert.css">
+	<style type="text/css">
+		button{margin:10px 5px;}
+	</style>
+</head>
+<body>
+	<button id="confirm">confirm</button>
+	<button id="alert">alert</button>
+	<button id="iframe">iframe</button>
+	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/alert.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$('#confirm').click(function(){
+			dialog.confirm({
+				content:'这是confirm弹框',
+			})
+		})
+		$('#alert').click(function(){
+			dialog.alert({
+				content:'这是alert弹框',
+			})
+		})
+
+		$('#iframe').click(function(){
+			dialog.alert({
+				iclass:'',
+				iwidth:'',
+				//iheight:'300px',
+				iframe:'../iconUseHandbook/demo.html'
+			})
+		})
+	</script>
+</body>
+</html>

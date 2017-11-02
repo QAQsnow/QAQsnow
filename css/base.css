@@ -1,0 +1,16 @@
+/******************************
+*name:base.css
+*The Author:snow
+*Update Time:2017-11-02
+*******************************/
+html{height:100%;overflow-y:auto;}
+body,ol,ul,li,dl,dt,dd,p,h1,h2,h3,h4,h5,blockquote,select,pre,textarea{margin:0;padding:0;}
+a,a:link,a:visited{color:#666;text-decoration:none}
+input,input[type='text'],input[type='submit']{outline:none;}
+img{vertical-align:middle;}
+i,em{font-style:normal;}
+
+/**************login******************/
+.login{width:70%;margin:50px auto 0;}
+.login h3{font-weight:normal;line-height:40px;letter-spacing:20px;color:#555;}
+/**************login end**************/
